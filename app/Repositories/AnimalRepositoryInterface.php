@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interface\Providers;
+namespace App\Repositories;
 
 use Domain\Animal\Animal;
 use Domain\Animal\AnimalId;
@@ -15,7 +15,7 @@ interface AnimalRepositoryInterface
 
     /**
      * @param AnimalId $id
-     * @return User
+     * @return mixed
      */
     public function find(AnimalId $id);
 

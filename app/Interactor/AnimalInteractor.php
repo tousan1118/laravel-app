@@ -5,7 +5,7 @@ namespace App\Interactor;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use App\Interactor\AnimalInteractorInterface;
-use App\Interface\Providers\AnimalRepositoryInterface;
+use App\Repositories\AnimalRepositoryInterface;
 
 class AnimalInteractor implements AnimalInteractorInterface
 {

@@ -4,7 +4,7 @@ namespace Repository;
 
 
 use Illuminate\Support\Facades\DB;
-use App\Interface\Providers\AnimalRepositoryInterface;
+use App\Repositories\AnimalRepositoryInterface;
 use Domain\Animal\Animal;
 use Domain\Animal\AnimalId;
 
