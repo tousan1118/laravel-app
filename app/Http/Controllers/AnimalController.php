@@ -24,6 +24,6 @@ class AnimalController extends Controller
 
         // TODO Viewの生成をController以外に委任する
         $viewModel = new AnimalCreateViewModel($response->getCreatedUserId(), $name);
-        return view('user.index', compact('viewModel'));
+        return view('animal.index', compact('viewModel'));
     }
 }
