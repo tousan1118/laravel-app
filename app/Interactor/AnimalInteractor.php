@@ -30,7 +30,7 @@ class AnimalInteractor implements AnimalInteractorInterface
      * @param  object  $event
      * @return void
      */
-    public function handle(AnimalCreateRequest $request)
+    public function handle(AnimalCreateRequest $request): AnimalCreateResponse
     {
         $animalId = new AnimalId(uniqid());
         $createAnimal = new Animal($animalId, $request->getName());

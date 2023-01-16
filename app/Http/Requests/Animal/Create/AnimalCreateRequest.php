@@ -2,29 +2,27 @@
 
 namespace App\Http\Requests\Animal\Create;
 
-use Illuminate\Foundation\Http\FormRequest;
-
-class AnimalCreateRequest extends FormRequest
+class AnimalCreateRequest
 {
     /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
+     * @var string
      */
-    public function authorize()
+    private $name;
+
+    /**
+     * AnimalCreateRequest constructor.
+     * @param string $createdUserId
+     */
+    public function __construct(string $name)
     {
-        return false;
+        $this->name = $name;
     }
 
     /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, mixed>
+     * @return string
      */
-    public function rules()
+    public function getName(): string
     {
-        return [
-            //
-        ];
+        return $this->name;
     }
 }
